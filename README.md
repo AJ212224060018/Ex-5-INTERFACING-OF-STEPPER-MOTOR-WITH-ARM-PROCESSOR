@@ -56,7 +56,7 @@ Startuplpc17xx.s, main.c (t), delay.c (t), systemlpc17xx.c (t), gpio.c (t)
 ### Header:
 Delay.h, stdutils.h, gp
 
-## PROGRAM:
+## PROGRAM
 ```
 #include<lpc17xx.h> #include "gpio.h" #define pin1 20
 #define pin2 21
@@ -77,7 +77,7 @@ control &=~(1<<pin1); control |=(1<<pin2); control |=(1<<pin3); control &=~(1<<p
 void cmotor3()
 {
 control &=~(1<<pin1); control &=~(1<<pin2); control |=(1<<pin3); control |=(1<<pin4);
- 
+
 }
 
 void cmotor4()
@@ -110,8 +110,10 @@ delay_ms(50);
 }
 }
 ```
+## OUTPUT
+<img width="789" height="421" alt="image" src="https://github.com/user-attachments/assets/d8fd13d4-8fc4-4777-a444-f34a010a4e8e" />
+<img width="693" height="148" alt="image" src="https://github.com/user-attachments/assets/58e43282-c1b5-4d8a-a2a6-9216695b499c" />
 
-## OUTPUT:
 
 ## RESULT: 
 Thus interfacing STEPPER MOTOR with ARM processor LPC1768 is verified.
